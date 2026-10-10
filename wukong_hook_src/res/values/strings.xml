@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WK授权</string>
+    <string-array name="xposed_scope">
+        <item>info.red.virtual</item>
+    </string-array>
+</resources>

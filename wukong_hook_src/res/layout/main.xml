@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WK VIP 授权激活"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入卡密"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="WKXXXXXXXXXX"
+        android:inputType="textCapCharacters"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnActivate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="激活卡密"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清除授权"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvCountdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#FF6666"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+</LinearLayout>
