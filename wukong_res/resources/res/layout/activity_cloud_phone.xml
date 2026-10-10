@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/sys_gray6"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <info.red.virtual.standardui.webview.SimpleWebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/back"
+        android:background="@mipmap/ico_back_144"
+        android:layout_width="@dimen/space_6x"
+        android:layout_height="@dimen/space_6x"
+        android:src="@mipmap/ico_back_144"/>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/sys_blue"/>
+</FrameLayout>

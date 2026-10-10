@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/layout_persistent_notice_bar"
+    android:background="@color/sys_gray5"
+    android:paddingTop="@dimen/space_1x"
+    android:paddingBottom="@dimen/space_1x"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/layout_height_m"
+    android:paddingStart="@dimen/space_1_5x"
+    android:paddingEnd="@dimen/space_1_5x">
+    <TextView
+        android:textSize="@dimen/text_body_s"
+        android:textColor="@color/sys_black"
+        android:id="@+id/tv_notice_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="有0个应用可以备份登录状态"
+        android:maxLines="2"
+        android:layout_weight="1"/>
+    <TextView
+        android:textSize="@dimen/text_body_s"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/btn_notice_action"
+        android:background="@drawable/shape_btn_sysblue"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/layout_height_s"
+        android:minWidth="72dp"
+        android:text="立即备份"
+        android:paddingStart="@dimen/space_1_5x"
+        android:paddingEnd="@dimen/space_1_5x"/>
+</LinearLayout>

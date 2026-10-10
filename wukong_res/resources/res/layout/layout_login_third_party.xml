@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/text_note_m"
+        android:textColor="@color/sys_gray1"
+        android:gravity="center_horizontal"
+        android:id="@+id/tv_tip_other"
+        android:paddingLeft="@dimen/space_0_5x"
+        android:paddingRight="@dimen/space_0_5x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin2x"
+        android:text="@string/login_other_way"
+        android:paddingHorizontal="@dimen/space_0_5x"
+        app:layout_constraintBottom_toTopOf="@+id/bt_login_by_wechat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/bt_login_by_wechat"
+        android:layout_width="@dimen/space_5x"
+        android:layout_height="@dimen/space_5x"
+        android:layout_marginBottom="@dimen/margin2x"
+        android:src="@mipmap/icon_wechat_gray"
+        android:layout_marginEnd="@dimen/layout_height_xs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_login_by_qq"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/bt_login_by_qq"
+        android:layout_width="@dimen/space_5x"
+        android:layout_height="@dimen/space_5x"
+        android:layout_marginBottom="@dimen/margin2x"
+        android:src="@mipmap/icon_qq_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt_login_by_wechat"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

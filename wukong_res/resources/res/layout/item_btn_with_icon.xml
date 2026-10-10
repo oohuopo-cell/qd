@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemBtnWithIcon_ll"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_margin="@dimen/res_0x7f07024c_margin0_5x"
+    style="@style/DialogWithBtnIconBg">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/itemBtnWithIcon_iv"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="@dimen/small_icon_size"/>
+    <TextView
+        android:id="@+id/itemBtnWithIcon_tv"
+        android:layout_marginStart="@dimen/res_0x7f07024c_margin0_5x"
+        style="@style/WkMediumTextStyle"/>
+</LinearLayout>

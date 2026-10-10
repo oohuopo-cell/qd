@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_mod_icon_contain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/dialog_mod_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin2x"/>
+        <TextView
+            android:id="@+id/dialog_mod_icon_default"
+            android:text="恢复默认"
+            style="@style/BottomSheetCustomDialogTextView"/>
+        <TextView
+            android:id="@+id/dialog_mod_icon_poto"
+            android:text="相册"
+            style="@style/BottomSheetCustomDialogTextView"/>
+        <TextView
+            android:id="@+id/dialog_mod_icon_use_app_icon"
+            android:text="使用分身%s图标"
+            style="@style/BottomSheetCustomDialogTextView"/>
+        <TextView
+            android:id="@+id/dialog_mod_icon_cancel"
+            android:layout_margin="@dimen/margin1x"
+            android:text="@string/btn_cancel"
+            style="@style/CancelRadiusButtonLargeDialog"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin2x"/>
+    </LinearLayout>
+</RelativeLayout>

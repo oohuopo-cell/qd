@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="@drawable/bg_radius24_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/BottomSheetContentPaddingSafe">
+    <TextView
+        android:textSize="@dimen/text_body_m"
+        android:textColor="@color/sys_black"
+        android:gravity="center"
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_m"
+        android:text="请从以下版本选择"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="vertical"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:textColor="@color/sys_black"
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_m"
+            android:layout_marginLeft="@dimen/margin1x"
+            android:layout_marginTop="@dimen/margin1x"
+            android:layout_marginRight="@dimen/margin1x"
+            android:layout_marginBottom="@dimen/margin1x"
+            android:text="取消"
+            android:layout_marginHorizontal="@dimen/margin1x"
+            android:layout_marginVertical="@dimen/margin1x"
+            app:backgroundTint="@color/sys_gray6"
+            style="@style/AppDetailBottomButton.Big"/>
+    </FrameLayout>
+</LinearLayout>

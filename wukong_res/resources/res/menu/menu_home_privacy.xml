@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_item_open_permission"
+        android:title="@string/open_permission"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_item_batch_uninstall"
+        android:title="批量卸载"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_item_change_pwd"
+        android:title="@string/setting_modify_password"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_item_add_app"
+        android:title="@string/add_miniapp"
+        app:showAsAction="never"/>
+</menu>

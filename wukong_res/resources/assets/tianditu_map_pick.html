@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>地图选点</title>
+    <style type="text/css">
+        html, body, #mapDiv { width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden; }
+        #dbgToggle, #dbgPanel { display: none; }
+        body.debug #dbgToggle {
+            display: block;
+            position: absolute;
+            right: 8px;
+            bottom: 8px;
+            z-index: 20;
+            padding: 6px 10px;
+            border: 0;
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.72);
+            color: #fff;
+            font-size: 12px;
+        }
+        body.debug #dbgPanel {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 19;
+            height: 42%;
+            overflow: auto;
+            background: rgba(0, 0, 0, 0.82);
+            color: #b8ffb8;
+            font: 11px/1.4 monospace;
+            padding: 8px;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        body.debug.dbg-open #dbgToggle { bottom: calc(42% + 8px); }
+        body.debug.dbg-open #dbgPanel { display: block; }
+    </style>
+</head>
+<body>
+<div id="mapDiv"></div>
+<button id="dbgToggle" type="button">调试</button>
+<pre id="dbgPanel"></pre>
+<script type="text/javascript">
+    var DEBUG = __DEBUG__;
+    var map;
+    var geocoder;
+    var geoTimer;
+    var lastGeoKey = "";
+    var geoInFlight = false;
+    var initLng = __INIT_LNG__;
+    var initLat = __INIT_LAT__;
+    var tk = "__TIAN_TK__";
+    var dbgLines = [];
+
+    var nativeConsole = {
+        log: console.log,
+        warn: console.warn,
+        error: console.error
+    };
+
+    function notifyAndroid(name, arg) {
+        try {
+            if (window.AndroidMapPick && AndroidMapPick[name]) {
+                AndroidMapPick[name](arg == null ? "" : String(arg));
+            }
+        } catch (e) {
+            try {
+                nativeConsole.log.call(console, "bridge " + name + " fail: " + e);
+            } catch (ignored) {
+            }
+        }
+    }
+
+    function dbg(msg) {
+        var line = String(msg == null ? "" : msg);
+        if (DEBUG) {
+            dbgLines.push(line);
+            if (dbgLines.length > 200) {
+                dbgLines.shift();
+            }
+            var panel = document.getElementById("dbgPanel");
+            if (panel) {
+                panel.textContent = dbgLines.join("\n");
+                panel.scrollTop = panel.scrollHeight;
+            }
+        }
+        try {
+            nativeConsole.log.call(console, line);
+        } catch (e) {
+        }
+        if (DEBUG) {
+            notifyAndroid("onLog", line);
+        }
+    }
+
+    function hookConsole() {
+        if (!DEBUG) {
+            return;
+        }
+        document.body.className = "debug";
+        var toggle = document.getElementById("dbgToggle");
+        toggle.onclick = function () {
+            document.body.classList.toggle("dbg-open");
+        };
+        ["log", "warn", "error"].forEach(function (level) {
+            console[level] = function () {
+                var parts = [];
+                for (var i = 0; i < arguments.length; i++) {
+                    var item = arguments[i];
+                    parts.push(typeof item === "string" ? item : stringify(item));
+                }
+                var line = "console." + level + " " + parts.join(" ");
+                if (DEBUG) {
+                    dbgLines.push(line);
+                    if (dbgLines.length > 200) {
+                        dbgLines.shift();
+                    }
+                    var panel = document.getElementById("dbgPanel");
+                    if (panel) {
+                        panel.textContent = dbgLines.join("\n");
+                        panel.scrollTop = panel.scrollHeight;
+                    }
+                }
+                notifyAndroid("onLog", line);
+                var origin = nativeConsole[level];
+                if (origin) {
+                    try {
+                        origin.apply(console, arguments);
+                    } catch (e) {
+                    }
+                }
+            };
+        });
+    }
+
+    function stringify(value) {
+        try {
+            return JSON.stringify(value);
+        } catch (e) {
+            return String(value);
+        }
+    }
+
+    function callMethod(obj, name) {
+        if (!obj) {
+            return null;
+        }
+        var fn = obj[name];
+        if (typeof fn === "function") {
+            try {
+                return fn.call(obj);
+            } catch (e) {
+                return null;
+            }
+        }
+        return fn == null ? null : fn;
+    }
+
+    function fieldOf(obj, key) {
+        var getter = "get" + key.charAt(0).toUpperCase() + key.slice(1);
+        var value = callMethod(obj, getter);
+        if (value == null || value === "") {
+            value = callMethod(obj, key);
+        }
+        return value == null ? "" : String(value);
+    }
+
+    function dumpGeocoderResult(result, lnglat) {
+        var ac = callMethod(result, "getAddressComponent") || (result && result.addressComponent) || null;
+        var point = callMethod(result, "getLocationPoint") || (result && result.locationPoint) || null;
+        var status = callMethod(result, "getStatus");
+        if (status == null && result) {
+            status = result.status;
+        }
+        var msg = callMethod(result, "getMsg");
+        if (msg == null && result) {
+            msg = result.msg;
+        }
+        var address = callMethod(result, "getAddress");
+        if (address == null && result) {
+            address = result.address;
+        }
+        var level = callMethod(result, "getLocationLevel");
+        if (level == null && result) {
+            level = result.locationLevel;
+        }
+        return {
+            status: status,
+            msg: msg,
+            address: address,
+            level: level,
+            point: point ? {
+                lng: callMethod(point, "getLng") || callMethod(point, "lng"),
+                lat: callMethod(point, "getLat") || callMethod(point, "lat")
+            } : null,
+            component: {
+                province: fieldOf(ac, "province"),
+                city: fieldOf(ac, "city"),
+                county: fieldOf(ac, "county"),
+                poi: fieldOf(ac, "poi"),
+                road: fieldOf(ac, "road"),
+                address: fieldOf(ac, "address")
+            },
+            center: lnglat ? {
+                lng: callMethod(lnglat, "getLng"),
+                lat: callMethod(lnglat, "getLat")
+            } : null
+        };
+    }
+
+    function coordKey(lnglat) {
+        if (!lnglat || typeof lnglat.getLng !== "function" || typeof lnglat.getLat !== "function") {
+            return "";
+        }
+        return Number(lnglat.getLng()).toFixed(6) + "," + Number(lnglat.getLat()).toFixed(6);
+    }
+
+    function scheduleGeocode() {
+        clearTimeout(geoTimer);
+        geoTimer = setTimeout(function () {
+            geocode(map ? map.getCenter() : null, false);
+        }, 300);
+    }
+
+    function geocode(lnglat, force) {
+        if (!geocoder || !lnglat) {
+            return;
+        }
+        var key = coordKey(lnglat);
+        if (!force && key && (geoInFlight || key === lastGeoKey)) {
+            return;
+        }
+        if (key) {
+            lastGeoKey = key;
+        }
+        geoInFlight = true;
+        notifyAndroid("onGeocoding", "");
+        geocoder.getLocation(lnglat, function (result) {
+            geoInFlight = false;
+            try {
+                if (!result) {
+                    lastGeoKey = "";
+                    notifyAndroid("onError", "geocode empty result");
+                    return;
+                }
+                var dump = dumpGeocoderResult(result, lnglat);
+                dbg("GeocoderResult " + stringify(dump));
+                var status = dump.status;
+                if (status == null || status === "" || Number(status) !== 0) {
+                    lastGeoKey = "";
+                    var failMsg = dump.msg || ("geocode fail status=" + status);
+                    notifyAndroid("onError", failMsg);
+                    return;
+                }
+                var ac = dump.component || {};
+                var payload = {
+                    lng: lnglat.getLng(),
+                    lat: lnglat.getLat(),
+                    address: dump.address || ac.address || "",
+                    province: ac.province || "",
+                    city: ac.city || "",
+                    county: ac.county || "",
+                    poi: ac.poi || "",
+                    road: ac.road || ""
+                };
+                notifyAndroid("onGeocode", JSON.stringify(payload));
+            } catch (e) {
+                lastGeoKey = "";
+                notifyAndroid("onError", "geocode callback fail: " + e);
+            }
+        });
+    }
+
+    function reportNow() {
+        if (!map) {
+            notifyAndroid("onError", "map not ready");
+            return;
+        }
+        clearTimeout(geoTimer);
+        geocode(map.getCenter(), true);
+    }
+    window.__reportNow = reportNow;
+
+    function onApiReady() {
+        try {
+            if (typeof T === "undefined") {
+                notifyAndroid("onError", "api load fail: T undefined");
+                return;
+            }
+            map = new T.Map("mapDiv", { projection: "EPSG:4326" });
+            map.centerAndZoom(new T.LngLat(initLng, initLat), 12);
+            geocoder = new T.Geocoder();
+            map.addEventListener("moveend", function () {
+                scheduleGeocode();
+            });
+            dbg("map ready");
+            scheduleGeocode();
+        } catch (e) {
+            notifyAndroid("onError", "map init fail: " + e);
+        }
+    }
+
+    function waitForT(ok, fail, attempt) {
+        if (typeof T !== "undefined") {
+            ok();
+            return;
+        }
+        if (attempt >= 25) {
+            fail();
+            return;
+        }
+        setTimeout(function () {
+            waitForT(ok, fail, attempt + 1);
+        }, 120);
+    }
+
+    function loadScript(src, onload, onerror) {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.onload = onload;
+        script.onerror = onerror;
+        script.src = src;
+        document.head.appendChild(script);
+        dbg("load script " + src);
+    }
+
+    hookConsole();
+    loadScript("https://api.tianditu.gov.cn/api?v=4.0&tk=" + tk, function () {
+        waitForT(function () {
+            dbg("api https ready");
+            onApiReady();
+        }, function () {
+            dbg("api https T missing, try http");
+            loadScript("http://api.tianditu.gov.cn/api?v=4.0&tk=" + tk, function () {
+                waitForT(onApiReady, function () {
+                    notifyAndroid("onError", "api load fail: T undefined");
+                }, 0);
+            }, function () {
+                notifyAndroid("onError", "api load fail");
+            });
+        }, 0);
+    }, function () {
+        dbg("api https fail, try http");
+        loadScript("http://api.tianditu.gov.cn/api?v=4.0&tk=" + tk, function () {
+            waitForT(onApiReady, function () {
+                notifyAndroid("onError", "api load fail: T undefined");
+            }, 0);
+        }, function () {
+            notifyAndroid("onError", "api load fail");
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape/>
+    </item>
+    <item
+        android:left="@dimen/space_2x"
+        android:top="@dimen/space_2x"
+        android:right="@dimen/space_2x"
+        android:bottom="@dimen/space_2x">
+        <shape>
+            <solid android:color="@color/sys_white"/>
+            <corners
+                android:topLeftRadius="@dimen/defaultBgRadius"
+                android:topRightRadius="@dimen/defaultBgRadius"
+                android:bottomLeftRadius="@dimen/defaultBgRadius"
+                android:bottomRightRadius="@dimen/defaultBgRadius"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dialog_vip_coupon_width"
+    android:layout_height="@dimen/dialog_vip_coupon_height">
+    <View
+        android:layout_gravity="end"
+        android:id="@+id/dialog_coupon_layout_img_close"
+        android:background="@mipmap/ico_close_white"
+        android:layout_width="@dimen/layout_height_xs"
+        android:layout_height="@dimen/layout_height_xs"
+        android:layout_marginBottom="@dimen/space_1x"
+        android:layout_marginEnd="@dimen/margin2x"/>
+    <ImageView
+        android:id="@+id/dialog_coupon_layout_img"
+        android:layout_width="@dimen/dialog_home_vip_width"
+        android:layout_height="0dp"
+        android:src="@drawable/ico_default_img_180"
+        android:layout_weight="1"/>
+</LinearLayout>

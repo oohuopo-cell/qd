@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_tips_user_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_height_xxl"
+    android:layout_marginTop="@dimen/margin1x">
+    <TextView
+        android:textSize="@dimen/text_title_m"
+        android:textColor="@color/sys_black"
+        android:id="@+id/dialog_tips_user_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin1x"
+        android:layout_marginEnd="@dimen/margin1x"/>
+</ScrollView>

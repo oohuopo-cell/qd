@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/mod_icon_selector"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/mod_icon_item_img"
+        android:padding="@dimen/strokeWidth"
+        android:layout_width="@dimen/space_8x"
+        android:layout_height="@dimen/space_8x"
+        android:src="@mipmap/ico_grey_30"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"/>
+    <RelativeLayout
+        android:id="@+id/mod_icon_item_img_logo"
+        android:layout_width="@dimen/margin3x"
+        android:layout_height="@dimen/margin3x"
+        android:layout_marginBottom="@dimen/strokeWidth"
+        android:layout_alignLeft="@+id/mod_icon_item_img"
+        android:layout_alignBottom="@+id/mod_icon_item_img"
+        android:layout_marginEnd="@dimen/strokeWidth">
+        <ImageView
+            android:id="@+id/mod_icon_item_img_logo_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/red_mark"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:textSize="@dimen/text_body_s"
+            android:textColor="@color/sys_white"
+            android:gravity="center"
+            android:id="@+id/mod_icon_item_img_logo_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="100"/>
+    </RelativeLayout>
+</RelativeLayout>

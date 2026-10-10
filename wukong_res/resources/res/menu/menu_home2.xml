@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ico_menu_search"
+        android:id="@+id/menu_item_search"
+        android:title="@string/txt_search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_item_add_app"
+        android:title="@string/add_miniapp"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_item_friend_share"
+        android:title="@string/menu_share_2_friend"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_item_resume_icon"
+        android:title="@string/menu_resume_icon"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_item_batch_add_desktop"
+        android:title="批量放桌面"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_item_batch_uninstall"
+        android:title="批量卸载"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_item_clone_sort"
+        android:title="分身排序"
+        app:showAsAction="never"/>
+</menu>

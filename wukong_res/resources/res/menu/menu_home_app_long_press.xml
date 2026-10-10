@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_menu_rename_24"
+        android:id="@+id/menu_item_home_long_press_rename"
+        android:title="@string/menu_rename_clone"/>
+    <item
+        android:icon="@mipmap/ico_general_desktop_90"
+        android:id="@+id/menu_item_home_long_press_desktop"
+        android:title="@string/str_popup_desktop"/>
+    <item
+        android:icon="@drawable/ic_menu_privacy_gray_24"
+        android:id="@+id/menu_item_home_long_press_move_to_privacy"
+        android:title="@string/menu_move_to_privacy_space"/>
+    <item
+        android:icon="@drawable/ic_menu_privacy_24"
+        android:id="@+id/menu_item_home_long_press_move_out_privacy"
+        android:title="@string/menu_move_out_privacy_space"/>
+    <item
+        android:icon="@mipmap/ico_general_top_90"
+        android:id="@+id/menu_item_home_long_press_top"
+        android:title="@string/tip_stick_top"/>
+    <item
+        android:icon="@mipmap/ico_general_delete_90"
+        android:id="@+id/menu_item_home_long_press_uninstall"
+        android:title="@string/eapp_uninstall"/>
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/BottomSheetContentPaddingSafe">
+    <ImageView
+        android:id="@+id/dlgBtnList_ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin2x"
+        android:src="@mipmap/ico_close_white"
+        android:layout_alignParentEnd="true"/>
+    <LinearLayout
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/dlgBtnList_llBg"
+        android:padding="@dimen/margin1x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dlgBtnList_ivClose">
+        <ImageView
+            android:id="@+id/dlgBtnList_ivIcon"
+            android:layout_width="@dimen/medium_icon_size"
+            android:layout_height="@dimen/medium_icon_size"
+            android:layout_marginTop="@dimen/margin1x"
+            android:layout_marginBottom="@dimen/margin2x"/>
+        <TextView
+            android:id="@+id/dlgBtnList_tvTitle"
+            android:layout_marginBottom="@dimen/margin2x"
+            style="@style/WkMediumTextStyle"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:orientation="vertical"
+            android:id="@+id/dlgBtnList_rvBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+</RelativeLayout>

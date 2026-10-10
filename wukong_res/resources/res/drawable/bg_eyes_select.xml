@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@mipmap/ico_password_eyes_select_p_90"/>
+    <item
+        android:state_selected="false"
+        android:drawable="@mipmap/ico_password_eyes_select_n_90"/>
+    <item android:drawable="@mipmap/ico_password_eyes_select_n_90"/>
+</selector>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white_radius20"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/DialogContentPadding1x">
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/dialog_wk_loading_progress"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin1x"
+        style="@style/TProgressStyle"/>
+    <TextView
+        android:textSize="@dimen/text_body_s"
+        android:textColor="@color/sys_black_50"
+        android:layout_gravity="center"
+        android:id="@+id/dialog_wk_loading_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin1x"
+        android:layout_marginBottom="@dimen/margin1x"
+        android:text="@string/lwk_load_tips"/>
+    <TextView
+        android:textSize="@dimen/text_note_m"
+        android:textColor="@color/sys_gray1"
+        android:layout_gravity="center"
+        android:id="@+id/dialog_wk_loading_sub_tv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin1x"/>
+</LinearLayout>

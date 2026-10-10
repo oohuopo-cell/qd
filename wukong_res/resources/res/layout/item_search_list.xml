@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin2x"
+    android:paddingRight="@dimen/margin2x"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_6x"
+    android:foreground="@drawable/select_tr25"
+    android:paddingHorizontal="@dimen/margin2x">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/layout_height_xs"
+        android:layout_height="@dimen/layout_height_xs"
+        android:src="@mipmap/ico_search_60"
+        android:scaleType="fitCenter"
+        android:importantForAccessibility="no"
+        android:layout_marginEnd="@dimen/space_1x"
+        app:shapeAppearance="@style/SpRoundedStyle"/>
+    <TextView
+        android:ellipsize="end"
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        style="@style/TvStyleTitle"/>
+    <TextView
+        android:textSize="@dimen/text_note_m"
+        android:textColor="@color/sys_gray1"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:id="@+id/describe"
+        android:layout_width="wrap_content"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        style="@style/TvStyleTitle"/>
+    <ImageView
+        android:layout_width="@dimen/icon_s_20"
+        android:layout_height="@dimen/icon_s_20"
+        android:src="@mipmap/icon_gray_arrow_right"/>
+</LinearLayout>

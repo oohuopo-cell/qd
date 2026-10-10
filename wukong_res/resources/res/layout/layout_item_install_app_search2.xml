@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_8x"
+    android:paddingStart="@dimen/margin1x"
+    android:paddingEnd="@dimen/margin1x">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/icon_display_60"
+        android:layout_height="@dimen/icon_display_60"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/SpRoundedStyle.oval"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/text_body_m"
+        android:textColor="@color/sys_black"
+        android:id="@+id/name"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_0_5x"
+        android:text="@string/xm_name"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/margin2x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toTopOf="@+id/icon"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="@color/sys_gray1"
+        android:id="@+id/pkg"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_0_5x"
+        app:layout_constraintBottom_toBottomOf="@+id/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/name"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

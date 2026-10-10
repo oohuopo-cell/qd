@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_item_friend_share"
+        android:title="@string/btn_share"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_url_copy"
+        android:title="@string/copylink"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_web_refresh"
+        android:title="@string/setting_profile_refresh"
+        app:showAsAction="never"/>
+</menu>

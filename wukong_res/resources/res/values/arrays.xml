@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="rainbow_animation">
+        <item>@color/sys_red</item>
+        <item>@color/sys_orange</item>
+        <item>@color/sys_yellow</item>
+        <item>@color/sys_green</item>
+        <item>@color/sys_mint</item>
+        <item>@color/sys_teal</item>
+        <item>@color/sys_cyan</item>
+        <item>@color/sys_blue</item>
+        <item>@color/sys_indigo</item>
+        <item>@color/sys_purple</item>
+        <item>@color/sys_pink</item>
+        <item>@color/sys_brown</item>
+    </array>
+</resources>

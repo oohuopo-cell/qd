@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:shape="line"
+        android:startColor="@color/vip_remove_bg_start"
+        android:endColor="@color/vip_remove_bg_end"
+        android:angle="90"/>
+    <corners android:radius="@dimen/defaultBgRadius"/>
+</shape>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/sys_gray6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_essential_toolbar"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0"
+        app:layout_constraintBottom_toTopOf="@+id/rl_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/layout_essential_toolbar_app_bar">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/activity_miniapp_zip_ivLogo_zip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_1x"
+            android:layout_marginBottom="@dimen/icon_s_20"
+            android:src="@drawable/wk_icon"
+            android:minWidth="@dimen/avatar_xxl_80"
+            android:minHeight="@dimen/avatar_xxl_80"/>
+        <include
+            android:id="@+id/activity_miniapp_zip_ilDes1_zip"
+            layout="@layout/item_text_description"/>
+        <include
+            android:id="@+id/ilDes2_zip"
+            layout="@layout/item_text_description"/>
+        <include
+            android:id="@+id/ilDes3_zip"
+            layout="@layout/item_text_description"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:background="@color/sys_white"
+        android:paddingTop="@dimen/padding1x"
+        android:paddingBottom="@dimen/padding1x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/padding1x"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:textSize="@dimen/text_title_l"
+            android:textColor="@color/sys_white"
+            android:gravity="center"
+            android:id="@+id/activity_miniapp_zip_btnStart_zip"
+            android:background="@drawable/im_login_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/zip_miniapp"
+            android:layout_marginStart="@dimen/margin2x"
+            android:layout_marginEnd="@dimen/margin2x"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

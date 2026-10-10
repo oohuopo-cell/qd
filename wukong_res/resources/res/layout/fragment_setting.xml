@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_setting"
+        android:background="@color/sys_gray6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/text_body_m"
+        android:textColor="@color/sys_black"
+        android:gravity="center"
+        android:id="@+id/tv_logout"
+        android:background="@color/sys_white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_6x"
+        android:layout_marginTop="@dimen/margin1x"
+        android:text="@string/login_out"
+        app:layout_constraintTop_toBottomOf="@+id/rv_setting"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

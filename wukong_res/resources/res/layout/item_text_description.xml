@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/icon_s_20"
+    android:paddingRight="@dimen/icon_s_20"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_6x"
+    android:paddingHorizontal="@dimen/icon_s_20">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle_des"
+        style="@style/RlStyleTitle"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDetail_des"
+        android:layout_alignParentEnd="true"
+        style="@style/RlStyleContent"/>
+</RelativeLayout>

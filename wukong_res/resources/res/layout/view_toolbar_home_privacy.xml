@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_toolbar_eapp_bg"
+    android:background="@color/sys_gray6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <info.red.virtual.standardui.widget.BasicToolBar
+        android:id="@+id/view_toolbar_eapp_bar"
+        app:menu="@menu/menu_home_privacy"
+        app:title="@string/privacy_space"
+        app:titleTextColor="@color/sys_black"
+        style="@style/BasicToolBarStyleGray"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/bt_back"
+        android:padding="@dimen/space_1x"
+        android:layout_width="@dimen/space_6x"
+        android:layout_height="@dimen/space_6x"
+        android:src="@mipmap/ico_back_gray_90"
+        android:importantForAccessibility="no"/>
+</FrameLayout>

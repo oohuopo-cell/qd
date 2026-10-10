@@ -1,0 +1,982 @@
+{
+  "easyGoVersion": "1.0",
+  "logicEntities": [
+    {
+      "head": {
+        "function": "magicwindow",
+        "required": "true"
+      },
+      "body": {
+        "mode": "1",
+        "activityPairs": [
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P0",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P1",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P2",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P3",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P4",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P5",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P6",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P7",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P8",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P9",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P10",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P11",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P12",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P13",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P14",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P15",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P16",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P17",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P18",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P19",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P20",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P21",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P22",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P23",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P24",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P25",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P26",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P27",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P28",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P29",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P30",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P31",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P32",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P33",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P34",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P35",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P36",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P37",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P38",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P39",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P40",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P41",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P42",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P43",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P44",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P45",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P46",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P47",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P48",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P49",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P50",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P51",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P52",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P53",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P54",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P55",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P56",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P57",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P58",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P59",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P60",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P61",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P62",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P63",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P64",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P65",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P66",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P67",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P68",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P69",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P70",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P71",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P72",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P73",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P74",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P75",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P76",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P77",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P78",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P79",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P80",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P81",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P82",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P83",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P84",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P85",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P86",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P87",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P88",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P89",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P90",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P91",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P92",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P93",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P94",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P95",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P96",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P97",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P98",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P99",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P100",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P101",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P102",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P103",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P104",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P105",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P106",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P107",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P108",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P109",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P110",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P111",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P112",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P113",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P114",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P115",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P116",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P117",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P118",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityProxy$P119",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P0",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P1",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P2",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P3",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P4",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P5",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P6",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P7",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P8",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P9",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P10",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P11",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P12",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P13",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P14",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P15",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P16",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P17",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P18",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P19",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P20",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P21",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P22",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P23",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P24",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P25",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P26",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P27",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P28",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P29",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P30",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P31",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P32",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P33",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P34",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P35",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P36",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P37",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P38",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P39",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P40",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P41",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P42",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P43",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P44",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P45",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P46",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P47",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P48",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P49",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P50",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P51",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P52",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P53",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P54",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P55",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P56",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P57",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P58",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P59",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P60",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P61",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P62",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P63",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P64",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P65",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P66",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P67",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P68",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P69",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P70",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P71",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P72",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P73",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P74",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P75",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P76",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P77",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P78",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P79",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P80",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P81",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P82",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P83",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P84",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P85",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P86",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P87",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P88",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P89",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P90",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P91",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P92",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P93",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P94",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P95",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P96",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P97",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P98",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P99",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P100",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P101",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P102",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P103",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P104",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P105",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P106",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P107",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P108",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P109",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P110",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P111",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P112",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P113",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P114",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P115",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P116",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P117",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P118",
+            "to": "*"
+          },
+          {
+            "from": "com.morgoo.droidplugin.stub.ActivityDialogProxy$P119",
+            "to": "*"
+          }
+        ],
+        "transActivities": [],
+        "UX": {
+          "supportRotationUxCompat": "true",
+          "isDraggable": "true"
+        }
+      }
+    }
+  ],
+  "client": "info.red.virtual"
+}

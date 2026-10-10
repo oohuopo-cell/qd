@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_title">分身大师</string>
+    <string name="channel_other_notification">其他通知</string>
+    <string name="choose">选择</string>
+    <string name="choose_empty">无相关应用</string>
+    <string name="file_install_failed">安装失败</string>
+    <string name="file_install_progress">安装中 %d%% ...</string>
+    <string name="install_downlad_app_fail">数据初始化失败</string>
+    <string name="login_app_tips">请先登录%1$s</string>
+    <string name="perm_dialog_cancel">取消</string>
+    <string name="perm_dialog_content">为了确保应用运行正常，需要申请一些权限，请点击“继续”。</string>
+    <string name="perm_dialog_continue">继续</string>
+    <string name="perm_dialog_tips">提示</string>
+    <string name="service_name_plugin_manager_service">核心服务</string>
+    <string name="share_tencent_mm">微信(Avatar)</string>
+    <string name="share_to">分享到</string>
+</resources>

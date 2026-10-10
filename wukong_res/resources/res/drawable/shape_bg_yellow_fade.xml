@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/defaultBgRadius2x"/>
+            <gradient
+                android:startColor="@color/sys_white"
+                android:endColor="@color/sys_white"
+                android:angle="0"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/defaultBgRadius2x"/>
+            <gradient
+                android:startColor="@color/transparent_white_25"
+                android:endColor="@color/transparent_yellow_25"
+                android:angle="90"
+                android:centerColor="@color/transparent_white_25"/>
+        </shape>
+    </item>
+</layer-list>

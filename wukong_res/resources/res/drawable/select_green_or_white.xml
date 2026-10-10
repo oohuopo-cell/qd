@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_gray5_radius512"/>
+    <item>
+        <clip android:drawable="@drawable/bg_green_radius512"/>
+    </item>
+</layer-list>

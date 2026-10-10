@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/sys_gray6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/layout_essential_toolbar"/>
+    <RelativeLayout
+        android:background="@color/sys_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <EditText
+            android:textSize="@dimen/text_body_m"
+            android:textColor="@color/sys_black"
+            android:textColorHint="@color/sys_gray4"
+            android:id="@+id/activity_rename_edittext"
+            android:background="@color/sys_white"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/space_6x"
+            android:hint="@string/tip_input_miniapp_name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:imeActionLabel="@string/done"
+            android:textCursorDrawable="@drawable/cusor_drawable"
+            android:layout_marginStart="@dimen/margin2x"
+            android:layout_marginEnd="@dimen/icon_display_60"/>
+        <ImageView
+            android:id="@+id/activity_rename_cleanImage"
+            android:layout_width="@dimen/margin2x"
+            android:layout_height="@dimen/margin2x"
+            android:src="@mipmap/ico_clean_60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin2x"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

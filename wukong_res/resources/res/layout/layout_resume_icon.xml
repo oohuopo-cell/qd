@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/text_body_s"
+    android:textColor="@color/sys_blue"
+    android:gravity="center_horizontal"
+    android:background="@color/sys_gray6"
+    android:paddingTop="@dimen/margin2x"
+    android:paddingBottom="@dimen/margin2x"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:text="@string/menu_resume_icon"
+    android:textAlignment="center"
+    android:paddingVertical="@dimen/margin2x"/>
