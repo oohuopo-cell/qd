@@ -1,0 +1,6 @@
+/workspace/wkvip_mod_src/src/com/wkvip/module/LicenseProvider.java
+/workspace/wkvip_mod_src/src/com/wkvip/module/WkVipLicense.java
+/workspace/wkvip_mod_src/src/com/wkvip/module/WkVip.java
+/workspace/wkvip_mod_src/src/com/wkvip/module/KeytLicense.java
+/workspace/wkvip_mod_src/src/com/wkvip/module/AuthActivity.java
+/workspace/wkvip_mod_src/src/com/wkvip/module/R.java

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA-256-Digest: Kl0hmOuGyNewlXL0ACBlEKjO/0At8jGY1o+hisIQ2kA=
+
+Name: assets/xposed_init
+SHA-256-Digest: yj9Ul9g3NYd65FBmr9WMLfFbmDVMdZTTIshEAI8GJnU=
+
+Name: classes.dex
+SHA-256-Digest: lTubR7teenFcFDkiqGiP7OBJKBpzq7FzvB0s77mtFXg=
+
+Name: res/layout/main.xml
+SHA-256-Digest: SI0j2urveFWkD9OQ3+XQwkS0z92JJYaK4f1BehxEAZ0=
+
+Name: resources.arsc
+SHA-256-Digest: FpM9vbOdAIVyZLXJnacMCDdqC9oSgmIPz1A1zh5oy/k=
+
