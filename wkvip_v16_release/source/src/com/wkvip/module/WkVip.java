@@ -121,6 +121,58 @@ public class WkVip implements IXposedHookLoadPackage {
          "realme/RMX3700/RMX3700:13/TP1A.220905.001/R.147f261-1-2:user/release-keys", "13", "33"},
         {"realme", "realme", "RMX3310", "RMX3310", "RMX3310", "realme GT2 Pro", "qcom", "qcom",
          "realme/RMX3310/RMX3310:12/SKQ1.211019.001/R.10ebfd4-1-2:user/release-keys", "12", "31"},
+
+        // ---- 红魔 (RedMagic) ----
+        {"RedMagic", "RedMagic", "NX729J", "NX729J", "NX729J", "红魔 8 Pro", "qcom", "qcom",
+         "RedMagic/NX729J/NX729J:13/TP1A.220905.001/1678871165:user/release-keys", "13", "33"},
+        {"RedMagic", "RedMagic", "NX709J", "NX709J", "NX709J", "红魔 7 Pro", "qcom", "qcom",
+         "RedMagic/NX709J/NX709J:12/SP1A.210812.001/1657798735:user/release-keys", "12", "31"},
+        {"RedMagic", "RedMagic", "NX679J", "NX679J", "NX679J", "红魔 6 Pro", "qcom", "qcom",
+         "RedMagic/NX679J/NX679J:11/RKQ1.201217.002/1636604956:user/release-keys", "11", "30"},
+        {"RedMagic", "RedMagic", "NX729J_V1", "NX729J", "NX729J", "红魔 8S Pro", "qcom", "qcom",
+         "RedMagic/NX729J/NX729J:13/TP1A.220905.001/1688628523:user/release-keys", "13", "33"},
+
+        // ---- 努比亚 (nubia) ----
+        {"nubia", "nubia", "NX713J", "NX713J", "NX713J", "努比亚 Z50", "qcom", "qcom",
+         "nubia/NX713J/NX713J:13/TP1A.220905.001/1671522876:user/release-keys", "13", "33"},
+        {"nubia", "nubia", "NX701J", "NX701J", "NX701J", "努比亚 Z40 Pro", "qcom", "qcom",
+         "nubia/NX701J/NX701J:12/SKQ1.211019.001/1645766498:user/release-keys", "12", "31"},
+        {"nubia", "nubia", "NX699J", "NX699J", "NX699J", "努比亚 Z30 Pro", "qcom", "qcom",
+         "nubia/NX699J/NX699J:11/RKQ1.201217.002/1623657600:user/release-keys", "11", "30"},
+
+        // ---- 魅族 (Meizu) ----
+        {"meizu", "meizu", "M381Q", "M381Q", "M381Q", "魅族 20 Pro", "qcom", "qcom",
+         "meizu/M381Q/M381Q:13/TP1A.220905.001/1680163200:user/release-keys", "13", "33"},
+        {"meizu", "meizu", "M391Q", "M391Q", "M391Q", "魅族 21", "qcom", "qcom",
+         "meizu/M391Q/M391Q:14/UKQ1.230804.001/1699603200:user/release-keys", "14", "34"},
+        {"meizu", "meizu", "18s", "18s", "18s", "魅族 18s", "qcom", "qcom",
+         "meizu/18s/18s:12/SKQ1.211019.001/1635436800:user/release-keys", "12", "31"},
+
+        // ---- 黑鲨 (Black Shark) ----
+        {"blackshark", "blackshark", "KSR-A0", "KSR-A0", "KSR-A0", "黑鲨 5 Pro", "qcom", "qcom",
+         "blackshark/KSR-A0/KSR-A0:12/SKQ1.211019.001/1647878400:user/release-keys", "12", "31"},
+        {"blackshark", "blackshark", "PAR-A0", "PAR-A0", "PAR-A0", "黑鲨 4 Pro", "qcom", "qcom",
+         "blackshark/PAR-A0/PAR-A0:11/RKQ1.201217.002/1619740800:user/release-keys", "11", "30"},
+
+        // ---- 联想拯救者 (Lenovo Legion) ----
+        {"Lenovo", "Lenovo", "L71061", "L71061", "L71061", "拯救者 Y90", "qcom", "qcom",
+         "Lenovo/L71061/L71061:12/SKQ1.211019.001/1648684800:user/release-keys", "12", "31"},
+        {"Lenovo", "Lenovo", "L70081", "L70081", "L70081", "拯救者 2 Pro", "qcom", "qcom",
+         "Lenovo/L70081/L70081:11/RKQ1.201217.002/1620604800:user/release-keys", "11", "30"},
+
+        // ---- 华硕 ROG (ASUS) ----
+        {"asus", "asus", "ASUS_AI2203_B", "AI2203", "AI2203", "ROG Phone 7", "qcom", "qcom",
+         "asus/AI2203/AI2203:13/TP1A.220905.001/WW_33.0804.2304.113:user/release-keys", "13", "33"},
+        {"asus", "asus", "ASUS_I003DD", "I003D", "I003D", "ROG Phone 5", "qcom", "qcom",
+         "asus/I003D/I003D:11/RKQ1.201217.002/WW_18.0840.2106.158:user/release-keys", "11", "30"},
+        {"asus", "asus", "ASUS_AI2205_B", "AI2205", "AI2205", "ROG Phone 6", "qcom", "qcom",
+         "asus/AI2205/AI2205:12/SKQ1.211019.001/WW_32.0810.2206.158:user/release-keys", "12", "31"},
+
+        // ---- 中兴 (ZTE) ----
+        {"ZTE", "ZTE", "A2024H", "P895A10", "P895A10", "ZTE Axon 50 Ultra", "qcom", "qcom",
+         "ZTE/P895A10/P895A10:13/TP1A.220905.001/1682419200:user/release-keys", "13", "33"},
+        {"ZTE", "ZTE", "A2024N", "P895A10", "P895A10", "ZTE Axon 40 Pro", "qcom", "qcom",
+         "ZTE/P895A10/P895A10:12/SKQ1.211019.001/1652716800:user/release-keys", "12", "31"},
     };
 
     // 随机选一台设备;优先选和当前品牌不同的，实现"跨品牌"效果
